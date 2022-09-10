@@ -3,7 +3,7 @@ import SideBar from './SideBar';
 import ContentWrapper from './ContentWrapper';
 import GenresInDb from './GenresInDb'
 import LastMovieInDb from './LastMovieInDb';
-import ContentRowMovies from './ContentRowMovies';
+import Movies from './Movies';
 import Error from './Error';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 function App() {
@@ -15,7 +15,7 @@ function App() {
             <Route path='/' exact element={<ContentWrapper />}/>
             <Route path='/genres' element={<GenresInDb />}/>
             <Route path='/lastMovie' element={<LastMovieInDb />}/>
-            <Route path='/Movies' element={<ContentRowMovies />}/>
+            <Route path='/Movies' element={<Movies />}/>
             <Route path='*' element={<Error/>}/>
           </Routes>
         </div>
